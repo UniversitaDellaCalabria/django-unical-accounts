@@ -1,4 +1,4 @@
 Setup
 -----
 
-Insert on top of _settins.INSTALLED_APP_
+Insert on top of _settings.INSTALLED_APP_
