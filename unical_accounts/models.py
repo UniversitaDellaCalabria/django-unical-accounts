@@ -35,7 +35,7 @@ class User(AbstractUser):
                                       blank=True, null=True)
     gender    = models.CharField(_('Genere'), choices=GENDER,
                                  max_length=12, blank=True, null=True)
-    location = CountryField('Luogo di nascita', max_length=30,
+    place_of_birth = CountryField('Luogo di nascita', max_length=30,
                             blank=True, null=True)
     birth_date = models.DateField('Data di nascita',
                                   null=True, blank=True)
@@ -50,5 +50,4 @@ class User(AbstractUser):
         verbose_name_plural = _("Utenti UNICAL")
 
     def __str__(self):
-        return '%s - %s %s' % (self.matricola,
-                               self.first_name, self.last_name)
+        return '{} {}'.format(self.first_name, self.last_name)
