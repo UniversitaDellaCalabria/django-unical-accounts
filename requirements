@@ -1,2 +1,2 @@
-django>2.2,<3
+django>=2.2.7,<3.0
 django_countries
