@@ -1,9 +1,8 @@
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from django_countries.fields import CountryField
 
 from django.contrib.auth.models import AbstractUser
-from django.utils.translation import ugettext as _
 from django.contrib.contenttypes.models import ContentType
 
 from django.conf import settings
